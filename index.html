@@ -1,4 +1,116 @@
----
-layout: home
-author_profile: true
----
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>사이트</title>
+
+    <style>
+      table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+
+      th, td {
+        padding: 10px;
+      }
+
+      a {
+        text-decoration: none;
+        color: red;
+      }
+    </style>
+
+    <script  language="Javascript">
+    <!--
+    var goodURL  = "#"  //이곳에 인증이 되었을때 이동할 페이지  입력
+        alert("패스워드를 입력하셔야 합니다.")
+
+    var password =  prompt("PASSWD 입력","")
+
+        if (password == null)  {
+            alert("출입금지")
+            location  = "http://www.naver.com"         // 실패시 이동 주소       history.back();를 넣어도 됨
+        }
+        else  {
+            var  combo =  password
+            var  total =  combo.toLowerCase()
+
+        if  (total == "1234")  {                // 비밀번호
+            alert("안녕하세요...어서오세요!")
+            location  =  goodURL
+        }
+        else  {
+            alert("출입금지")
+            location  = "http://www.naver.com"    // 실패시 이동 주소      history.back();를 넣어도 됨
+        }
+    }
+    //-->
+    </script>
+  </head>
+  <body>
+
+    <h1>방문을 환영합니다.</h1>
+
+    <h1>HTML이란???</h1>
+    <p>HTML은 하이퍼텍스트 마크업 랭귀지라는 단어?의 줄임말입니다. 영어로는 <mark><strong>H</strong>yper<strong>T</strong>ext <strong>M</strong>arkup <strong>L</strong>anguage</mark> 라고 씁니다.
+      즉, 말 그대로 해석하시면 됩니다. 쉽게 이야기하자면, 웹문서를 제작하는 프로그래밍 언어가 바로 HTML입니다. (HTML은 웹문서를 만들기만 하고 전혀 꾸미지는 않습니다. 꾸미는것은 CSS입니다)
+      현재 최신의 HTML 버전은 바로 HTML5입니다. HTML은 태그를 이용하여 웹문서를 제작하는데요, 문법도 알아야하겠지만, 물론 먼저 알아야 하는것은 태그입니다.
+
+      어려워보이지만 막상 시작하시면 어떤 프로그래밍 언어보다도 쉽다고 느끼실수 있습니다.(파고들면 어려워지는 경우도 있음. CSS도 배워야 하니까.) 여기서는 최대한 여러분들께 HTML에 대하여 쉽게 공부하실수 있게
+      도와드릴수 있으면 좋겠습니다. 태그를 확인하시려면 <a href="/html/tags.html" target="_blank">이곳을</a> 클릭해주세요
+    </p>
+
+    <h3>테이블 만들어보기</h3>
+    <p>테이블을 제작하는것은 생각보다 어렵습니다. 하지만 몇가지 규칙만 알고있는다면 생각보다 사이트에서 표를 구성하는것이 그렇게 힘들지는 않을것입니다. 일단 기본적으로 표를 만들때 사용하는 태그는
+      td 태그와 th 태그입니다. 또한 이 두개의 태그는 tr 태그로 묶이게 되는데요. tr 태그는 행을 만드는 태그고, th는 제목 셀, td는 셀이라고 생각하시면 됩니다. 이 세개의 태그로 표를 한번 만들어 보겠습니다.
+    </p>
+    <!-- 테이블 1. 그냥 일반적인 표처럼 제작-->
+    <table border="1">
+      <caption>
+        <strong>테이블 1</strong>
+        <p>일반적인 표</p>
+      </caption>
+      <tr>
+      <th>제목 1</th>
+      <th>제목 2</th>
+      <th>제목 3</th>
+      </tr>
+      <tr>
+        <td>내용 1</td>
+        <td>내용 2</td>
+        <td>내용 3</td>
+      </tr>
+    </table>
+
+    <h4>셀을 합치기</h4>
+<p> 지금 만들어진 표는 맨 윗줄에 제목 3개, 아랫줄에 내용 3개가 있었는데요, 그럼 이제 colspan 이라는 태그를 이용해서 내용 2, 3 셀을 묶어보도록 하겠습니다.</p>
+<!-- 테이블 2는 테이블 1이랑 차이는 없으나, 내용 2,3을 합체함 -->
+    <table border="1">
+      <caption>
+        <strong>테이블 2</strong>
+        <p>내용 2,3 합체</p>
+      </caption>
+      <tr>
+      <th>제목 1</th>
+      <th>제목 2</th>
+      <th>제목 3</th>
+      </tr>
+      <tr>
+        <td>내용 1</td>
+        <td colspan="2">합체!</td>
+      </tr>
+    </table>
+  </body>
+</html>
+
+<h4>captio 태그는 무엇인가요?</h4>
+<p>표의 제목을 위쪽 중앙에 나타내는 태그입니다. 페이지 소스를 확인하시면 아시겠지만, 테이블 1,2 모두 caption 태그를 사용하고 있음을 확인하실수 있습니다 caption 태그는 또한 table 태그 바로 아래에
+  사용하도록 되어있습니다.</p>
+
+
+
+
+
+
+
+ㅇ
