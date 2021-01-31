@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>ㄴㅇㄱ</title>
+
+    <style>
+    .none_dot {
+  list-style: none;
+  padding-left: 10px;
+}
+div.center{
+  text-align: center;
+}
+    </style>
+  </head>
+  <body>
+    <button onClick="window.location.reload()" title="페이지 전체를 리셋합니다. 필요할때만 이용해주세요. 자칫하면 작성중인 정보가 날아갑니다">페이지 리셋</button>
+    <input type="search" name="검색" placeholder="검색" title="검색어를 입력하세요" autofocus required>
+    <button type="submit" name="submit" title="구현되지 않았으므로 검색을 클릭해도 변화가 없습니다">검색</button>
+    <button onclick= history.back(); title="누르면 이전 페이지로 이동합니다" >이전 페이지</button>
+
+    <input type="file" name="파일" value="파일업로드">
+    <!-- 다음단락 -->
+    <hr>
+    <!-- 가짜 회원가입 페이지 양식 추후 php로 개발 예정 -->
+    <form>
+      <fieldset>
+      <legend style="color:red">회원가입</legend>
+      <h5>
+      회원가입을 진행해주셔서 진심으로 감사드립니다. 다만 이 페이지는 정말로 회원가입이 되지는 않습니다. 그냥 가짜로 제작해둔 사이트라고 생각해주시면 됩니다.
+      </h5>
+      <ul class="none_dot">
+        <li>
+          <label for="email">이메일</label>
+          <input type="email" name="" placeholder="example@example.com" title="example@example.com의 이메일 형식으로 입력하세요" required>
+          <small style="color:red;">이메일은 필수항목입니다</small>
+        </li>
+        <li>
+          <label for="tel">전화번호</label>
+          <input type="tel" name="" placeholder="010-0000-0000" title="전화번호는 필수항목입니다" required>
+          <small style="color:red;">전화번호는 필수항목입니다</small>
+        </li>
+        <li>
+          <label for="date">생년월일</label>
+          <input type="date" min="2012-01-01" required>
+          <small style="color:red;">생년월일은 필수항목입니다. 2012년생부터 가입이 가능합니다</small>
+        </li>
+        <!-- 회원가입 종료나 리셋 버튼 추가됨 -->
+        <div class="center">
+        <br><button onclick= history.back(); title="누르면 회원가입을 종료하고 이전 페이지로 돌아갑니다" >회원가입 종료&돌아가기</button>
+        <button type="reset" name="리셋" title="모든것을 리셋하고 처음부터 다시 시작합니다">리셋</button>
+        <input type="submit" title="작성내용 전송">
+      </div>
+      </ul>
+    </fieldset>
+  </form>
+  <!-- 다음 단락 -->
+  <hr>
+<h5>
+  저기 보이는 페이지 리셋 버튼과 회원가입에 있는 리셋 버튼은 모두 다른 역할을 합니다. "페이지 리셋" 버튼은 페이지 전체를 리셋하고, 회원가입에 있는 "리셋"은
+  검색창에 적혀있는 내용은 놔두고, 회원가입에 적는 정보란만 모두 리셋하도록 프로그래밍되어있습니다. 즉, 페이지 리셋 버튼은 자칫하면 작성중인 정보를 모두
+  날려버릴수 있으니, 필요시에만 이용해주시면 되겠습니다
+</h5>
+
+  </body>
+</html>
